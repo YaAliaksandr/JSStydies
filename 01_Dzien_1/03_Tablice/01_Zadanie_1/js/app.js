@@ -8,7 +8,6 @@ function middle(someArr) {
 
 	}
 	let midd = Math.round(zero / someArr.length);
-	console.log(midd);
 	let arrMap = someArr.map(function (item) {
 		item = midd - item;
 		if (item < 0) {
@@ -16,6 +15,7 @@ function middle(someArr) {
 		}
 		return item;
 	});
-	console.log(arrMap);
+	return arrMap;
 }
-middle(arr);
+console.log(middle(arr));
+
