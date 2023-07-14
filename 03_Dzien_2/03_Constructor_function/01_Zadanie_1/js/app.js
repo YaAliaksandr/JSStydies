@@ -21,7 +21,7 @@ Basket.prototype.showBasket = function () {
 		${productName} cena ${productPrice} w iłosci ${productQuantity} summa do zapłaty ${productSummZl} zl. ${productSummGrStr} gr.`;
 		userSumm += Math.round(parseFloat(`${productSummZl}.${productSummGrStr}`) * 100) / 100;
 	});
-	this.sum = userSumm.toFixed(2);
+	this.sum = +userSumm.toFixed(2);
 	return str;
 };
 
@@ -29,7 +29,7 @@ Basket.prototype.showBasket = function () {
 
 let user1 = new Basket();
 user1.addProduct("apple", 40, "1.5344 kg");
-user1.addProduct("watermellon", 12, 1);
+user1.addProduct("pencil", 12, "1 rzecz");
 console.log(user1);
 console.log(user1.showBasket());
 console.log(user1.sum);
