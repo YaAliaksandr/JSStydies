@@ -1,5 +1,6 @@
-console.log(document.querySelector("#home"));
-console.log(home);
-console.log(document.getElementById("home"));
-console.log(document.querySelector("li[data-direction]"));
-console.log(document.querySelector(".block"));
+let valDiv = document.querySelectorAll("div").length;
+console.log(valDiv);
+let elOffer = document.querySelectorAll(".offers").length;
+console.log(elOffer);
+let valHref = document.querySelectorAll("[href]").length;
+console.log(valHref);
