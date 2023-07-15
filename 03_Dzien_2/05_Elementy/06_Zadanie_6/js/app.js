@@ -1,5 +1,5 @@
 const banner = document.querySelector(".ban");
-console.dir(banner);
+
 function getClassInfo(element) {
 
 	let className = element.className;
