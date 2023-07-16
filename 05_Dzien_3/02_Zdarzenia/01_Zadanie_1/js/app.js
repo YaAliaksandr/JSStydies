@@ -15,8 +15,6 @@ let childerDisplayNone = function () {
 }
 for (let item of divParrent) {
 	// console.log(item)
-
 	item.addEventListener("mouseover", childrenVisiable);
 	item.addEventListener("mouseout", childerDisplayNone);
-
 }
