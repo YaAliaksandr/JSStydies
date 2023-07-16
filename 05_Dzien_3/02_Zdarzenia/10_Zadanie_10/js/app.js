@@ -6,21 +6,22 @@ const b = document.getElementById("b");
 console.log("obiekt document: ", this);
 
 a.addEventListener("click", function (event) {
-  // Tutaj this wskazuje na element DOM o id a
-  console.log("a: ", this);
+	// Tutaj this wskazuje na element DOM o id a
+	console.log("a: ", this);
 });
 
 b.addEventListener("click", function (event) {
-  // Tutaj this wskazuje na element DOM o id b
-  console.log("b: ", this);
+	// Tutaj this wskazuje na element DOM o id b
+	console.log("b: ", this);
 
 
-  function innerFuncOne() {
-    // Tutaj this wskazuje na element Window, bo funkcja została
-    //wywołana bez żadnego kontekstu.
-    console.log("innerFuncOne: ", this);
-  }
+	function innerFuncOne() {
+		// Tutaj this wskazuje na element Window, bo funkcja została
+		//wywołana bez żadnego kontekstu.
+		console.log("innerFuncOne: ", this);
+		// b.style.backgroundColor = "red";
+	}
 
-  innerFuncOne();
+	innerFuncOne();
 
 });
