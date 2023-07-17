@@ -15,7 +15,6 @@ let originalColor = function (e) {
 	for (let li of ul.children) {
 		li.style.backgroundColor = "";
 	}
-
 	// that's ok too
 	// [...ul.children].forEach((item) => {
 	// 	item.style.backgroundColor = "";
