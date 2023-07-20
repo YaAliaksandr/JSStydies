@@ -1,16 +1,29 @@
+//  Another variant
 // let btn = document.querySelector("button");
-let btnArr = document.querySelectorAll("button");
+// let btnArr = document.querySelectorAll("button");
 
-let btnCounter = function () {
-	let spanBtn = this.previousElementSibling.querySelector("span");
-	let numOfSpanBtn = Number(spanBtn.textContent);
-	numOfSpanBtn++;
-	spanBtn.textContent = numOfSpanBtn;
-}
+// let btnCounter = function () {
+// 	let spanBtn = this.previousElementSibling.querySelector("span");
+// 	let numOfSpanBtn = Number(spanBtn.textContent);
+// 	numOfSpanBtn++;
+// 	spanBtn.textContent = numOfSpanBtn;
+// }
 
-for (let btn of btnArr) {
-	btn.addEventListener('click', btnCounter);
-}
+// for (let btn of btnArr) {
+// 	btn.addEventListener('click', btnCounter);
+// }
+
+
+const btnRefs = document.querySelectorAll(".btn");
+const counterRefs = document.querySelectorAll('.counter');
+
+
+btnRefs.forEach((btn, id) => {
+	btn.addEventListener("click", () => {
+		counterRefs[id].innerText = parseInt(counterRefs[id].innerText) + 1;
+	})
+})
+
 
 
 

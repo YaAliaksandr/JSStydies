@@ -1,5 +1,5 @@
-let elemLi = document.querySelector(".exercise").querySelectorAll("li");
-
+let elem = document.querySelector(".exercise");
+let elemLi = elem.querySelectorAll("li");
 let style = function (elemArr) {
 	let elemCounter = 0;
 	for (let i = 0; i < elemArr.length; i++) {

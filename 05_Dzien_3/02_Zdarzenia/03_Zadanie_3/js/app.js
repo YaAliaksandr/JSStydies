@@ -1,1 +1,1 @@
-document.querySelector("button").addEventListener('click', () => console.log("Hura! Działa!"));
+document.querySelector("button").addEventListener('click', function () => console.log("Hura! Działa!"));
